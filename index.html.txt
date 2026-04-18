@@ -8,12 +8,11 @@
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
-      background: url('flower1.png') no-repeat center center fixed;
-      background-size: cover;
+      background: #fdf6e3; /* latar romantis emas lembut */
       color: #333;
     }
     header {
-      background: #f5a623; /* oranye ala Mardi */
+      background: linear-gradient(90deg, #d4af37, #f5deb3); /* gradasi emas */
       color: #fff;
       padding: 40px;
       text-align: center;
@@ -36,11 +35,11 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-    h3 { color: #f5a623; }
+    h3 { color: #d4af37; }
     .countdown { font-size: 22px; color: #b23a48; }
     .alamat { color: #2a7f62; font-weight: bold; } /* hijau untuk alamat */
     footer {
-      background: #f5a623;
+      background: linear-gradient(90deg, #d4af37, #f5deb3);
       color: #fff;
       padding: 20px;
       text-align: center;
@@ -53,8 +52,8 @@
 <header>
   <h1>Undangan Pernikahan</h1>
   <h2>Edi Kurniawan & Sesilia</h2>
-  <p>Kami akan menikah!</p>
-  <p>Kamis, 16 April 2026</p>
+  <p>Bismillahirrahmanirrahim</p>
+  <p>Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
 </header>
 
 <section>
