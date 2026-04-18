@@ -8,11 +8,11 @@
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
-      background: #fdf6e3; /* latar romantis emas lembut */
+      background: linear-gradient(90deg, #d4af37, #f5deb3); /* gradasi emas */
       color: #333;
     }
     header {
-      background: linear-gradient(90deg, #d4af37, #f5deb3); /* gradasi emas */
+      background: linear-gradient(90deg, #d4af37, #f5deb3);
       color: #fff;
       padding: 40px;
       text-align: center;
@@ -37,7 +37,7 @@
     }
     h3 { color: #d4af37; }
     .countdown { font-size: 22px; color: #b23a48; }
-    .alamat { color: #2a7f62; font-weight: bold; } /* hijau untuk alamat */
+    .alamat { color: #2a7f62; font-weight: bold; }
     footer {
       background: linear-gradient(90deg, #d4af37, #f5deb3);
       color: #fff;
@@ -69,7 +69,7 @@
 
 <section>
   <h3>Lokasi</h3>
-  <p>Silakan klik tombol di bawah ini untuk membuka peta menuju lokasi resepsi.</p>
+  <p>Maps telah tersedia di bawah untuk menuju lokasi resepsi.<br>Silakan klik tombol di bawah ini untuk membuka peta.</p>
   <a href="https://maps.google.com" target="_blank">Buka Peta</a>
 </section>
 
