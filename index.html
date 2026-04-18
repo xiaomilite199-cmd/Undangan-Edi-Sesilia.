@@ -3,66 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <title>Undangan Pernikahan Edi & Sesilia</title>
+  <!-- Font elegan -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       background: url('flower1.jpg') no-repeat center top fixed;
       background-size: cover;
       color: #333;
     }
     header {
-      background: rgba(210, 105, 30, 0.85);
-      color: white;
-      padding: 40px;
+      background: linear-gradient(135deg, #f5e6cc, #d4af37);
+      color: #333;
+      padding: 50px;
       text-align: center;
-      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 60px;
+      margin: 0;
+    }
+    header h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 40px;
+      margin: 10px 0;
     }
     section {
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.95);
       margin: 30px auto;
       padding: 25px;
       width: 85%;
       border-radius: 12px;
       box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      animation: slideUp 1.5s ease-in-out;
     }
-    h3 { color: #b23a48; }
+    h3 { color: #d4af37; }
     .countdown { font-size: 24px; color: #b23a48; }
-    .form-box { margin: 20px auto; width: 300px; text-align: left; }
-    input, textarea {
-      width: 100%; margin: 5px 0; padding: 8px;
-      border: 1px solid #ccc; border-radius: 5px;
-    }
-    button {
-      background: #b23a48; color: white; padding: 10px;
-      border: none; border-radius: 5px; cursor: pointer;
-      transition: background 0.3s;
-    }
-    button:hover { background: #8c2a35; }
-    footer {
-      background: rgba(210, 105, 30, 0.85);
-      color: white; padding: 20px; margin-top: 30px;
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
-    }
     .gallery {
       display: flex; justify-content: center; gap: 15px;
       flex-wrap: wrap;
     }
     .gallery img {
-      width: 200px; height: 150px; object-fit: cover;
-      border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      width: 220px; height: 160px; object-fit: cover;
+      border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.3);
       transition: transform 0.3s;
     }
     .gallery img:hover { transform: scale(1.05); }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+    footer {
+      background: linear-gradient(135deg, #f5e6cc, #d4af37);
+      color: #333; padding: 20px; margin-top: 30px;
+      text-align: center;
     }
   </style>
 </head>
@@ -87,33 +77,6 @@
 </section>
 
 <section>
-  <h3>Lokasi</h3>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="400" height="300" style="border:0;" allowfullscreen></iframe>
-</section>
-
-<section>
-  <h3>Konfirmasi Kehadiran (RSVP)</h3>
-  <div class="form-box">
-    <input type="text" placeholder="Nama Anda">
-    <input type="number" placeholder="Jumlah Tamu">
-    <button>Kirim</button>
-  </div>
-</section>
-
-<section>
-  <h3>Tulis Ucapan</h3>
-  <div class="form-box">
-    <textarea placeholder="Tuliskan ucapan Anda..."></textarea>
-    <button>Kirim</button>
-  </div>
-</section>
-
-<section>
-  <h3>Amplop Digital</h3>
-  <button onclick="window.location.href='https://link-transfer.com'">Kirim Hadiah</button>
-</section>
-
-<section>
   <h3>Galeri Dekorasi</h3>
   <div class="gallery">
     <img src="flower1.jpg" alt="Dekorasi 1">
@@ -127,6 +90,7 @@
   Hormat kami, Keluarga Besar Bpk. Syah Arpendi & Keluarga Besar Bpk. Antonius Juteng</p>
 </footer>
 
+<!-- Musik romantis otomatis -->
 <audio autoplay loop>
   <source src="romantic-english-song.mp3" type="audio/mpeg">
 </audio>
