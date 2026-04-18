@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Undangan Pernikahan Edi & Sesilia</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: url('flower1.jpg') no-repeat center top fixed;
+      background-size: cover;
+      color: #333;
+    }
+    header {
+      background: rgba(210, 105, 30, 0.85);
+      color: white;
+      padding: 40px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    section {
+      background: rgba(255, 255, 255, 0.9);
+      margin: 30px auto;
+      padding: 25px;
+      width: 85%;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      animation: slideUp 1.5s ease-in-out;
+    }
+    h3 { color: #b23a48; }
+    .countdown { font-size: 24px; color: #b23a48; }
+    .form-box { margin: 20px auto; width: 300px; text-align: left; }
+    input, textarea {
+      width: 100%; margin: 5px 0; padding: 8px;
+      border: 1px solid #ccc; border-radius: 5px;
+    }
+    button {
+      background: #b23a48; color: white; padding: 10px;
+      border: none; border-radius: 5px; cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover { background: #8c2a35; }
+    footer {
+      background: rgba(210, 105, 30, 0.85);
+      color: white; padding: 20px; margin-top: 30px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .gallery {
+      display: flex; justify-content: center; gap: 15px;
+      flex-wrap: wrap;
+    }
+    .gallery img {
+      width: 200px; height: 150px; object-fit: cover;
+      border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover { transform: scale(1.05); }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Undangan Pernikahan</h1>
+  <h2>Edi Kurniawan & Sesilia</h2>
+  <p>Bismillahirrahmanirrahim</p>
+  <p>Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
+</header>
+
+<section>
+  <h3>Detail Acara</h3>
+  <p><strong>Akad Nikah:</strong> Kamis, 16 April 2026, 08:00 WIB<br>KUA Nanga Taman</p>
+  <p><strong>Resepsi:</strong> Minggu, 19 April 2026, 13:00 WIB – 21:00 WIB<br>Kediaman Bpk. Syah Arpendi, Dusun Nanga Ketiur</p>
+</section>
+
+<section>
+  <h3>Countdown Menuju Resepsi</h3>
+  <div class="countdown" id="countdown"></div>
+</section>
+
+<section>
+  <h3>Lokasi</h3>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="400" height="300" style="border:0;" allowfullscreen></iframe>
+</section>
+
+<section>
+  <h3>Konfirmasi Kehadiran (RSVP)</h3>
+  <div class="form-box">
+    <input type="text" placeholder="Nama Anda">
+    <input type="number" placeholder="Jumlah Tamu">
+    <button>Kirim</button>
+  </div>
+</section>
+
+<section>
+  <h3>Tulis Ucapan</h3>
+  <div class="form-box">
+    <textarea placeholder="Tuliskan ucapan Anda..."></textarea>
+    <button>Kirim</button>
+  </div>
+</section>
+
+<section>
+  <h3>Amplop Digital</h3>
+  <button onclick="window.location.href='https://link-transfer.com'">Kirim Hadiah</button>
+</section>
+
+<section>
+  <h3>Galeri Dekorasi</h3>
+  <div class="gallery">
+    <img src="flower1.jpg" alt="Dekorasi 1">
+    <img src="flower2.jpg" alt="Dekorasi 2">
+    <img src="flower3.jpg" alt="Dekorasi 3">
+  </div>
+</section>
+
+<footer>
+  <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.<br>
+  Hormat kami, Keluarga Besar Bpk. Syah Arpendi & Keluarga Besar Bpk. Antonius Juteng</p>
+</footer>
+
+<audio autoplay loop>
+  <source src="romantic-english-song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  // Countdown script
+  const targetDate = new Date("Apr 19, 2026 13:00:00").getTime();
+  const countdownElement = document.getElementById("countdown");
+  setInterval(() => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+    if (distance < 0) {
+      countdownElement.innerHTML = "Hari resepsi telah tiba!";
+      return;
+    }
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    countdownElement.innerHTML = `${days} hari ${hours} jam ${minutes} menit ${seconds} detik`;
+  }, 1000);
+</script>
+
+</body>
+</html>
